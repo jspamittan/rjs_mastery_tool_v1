@@ -28,11 +28,6 @@ export const Secondary = ({ classes }) => {
             setAnchorEl(null);
         }
     };
-
-    const loginHandler = () => {
-        const url = pm(env(), 'url')
-        window.location.href = `${url}/sso/rqx?from=MC_SSO_RQX&callback=${env()==='dev'?'development':env()}&platform=personal`
-    }
  
     return (
         <AppBar position="fixed" className={classes.appbar} style={{backgroundColor: 'white'}} elevation={0}>
@@ -41,7 +36,7 @@ export const Secondary = ({ classes }) => {
                     <Box position="fixed" left={0} width="200px" ml={2}>
                         <Box display="flex" alignItems="center" onClick={() => history.push('/')} className="c-pointer">
                             <Box mr={2} mt={1} pl={.3}><BizLogo size={40} br={5}/></Box>
-                            <Typography variant="h6" noWrap color="#000" fontSize={16}>POF<b>Yourtool</b></Typography>
+                            <Typography variant="h6" noWrap color="#000" fontSize={16}>POF<b>MasteryTool</b></Typography>
                         </Box>
                     </Box>
                     <Box marginLeft="170px" marginRight="500px" width="100%" display="flex" justifyContent="center" alignItems="center">
@@ -89,7 +84,7 @@ export const Secondary = ({ classes }) => {
                                         </Box>
                                     ) : (
                                         <Box display="flex" justifyContent="space-between" alignItems="center" width="50%">
-                                            <Button variant="contained" color="secondary" sx={{borderRadius: '10px'}} fullWidth onClick={loginHandler}>Login</Button>
+                                            {/* <Button variant="contained" color="secondary" sx={{borderRadius: '10px'}} fullWidth onClick={loginHandler}>Login</Button> */}
                                         </Box>
                                     )
                                 }

@@ -1,25 +1,32 @@
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from '../../components/home/Index';
 import { Statistics } from '../../components/statistics/Index';
 import { Box, Container } from '@mui/material';
+import SidebarLeft from '../../components/layouts/navigations/SidebarLeft';
 
 export const WebRoute = () => {
     return (
-        <Switch>
-            {/* HOME ROUTES */}
-            <Route exact path="/" render={props=>(<Home {...props} />)} />
+        <Router>
+            <SidebarLeft />
+            <Switch>
+                {/* DASHBOARD ROUTES */}
+                <Route exact path="/" render={props=>(<Home {...props} />)} />
 
-            {/* STATISTICS ROUTES */}
-            <Route exact path="/statistics" render={props=>(<Statistics {...props} />)} />
+                {/* POLL ROUTES */}
+                {/* <Route exact path="/poll" render={props=>(<Poll {...props} />)} /> */}
+                
+                {/* STATISTICS ROUTES */}
+                <Route exact path="/statistics" render={props=>(<Statistics {...props} />)} />
 
-            {/* 404 NOT FOUND */}
-            <Route>
-                <Container>
-                    <Box display="flex">
-                        Error 404
-                    </Box>
-                </Container>
-            </Route>
-        </Switch>
+                {/* 404 NOT FOUND */}
+                <Route>
+                    <Container>
+                        <Box display="flex">
+                            Error 404
+                        </Box>
+                    </Container>
+                 </Route>
+            </Switch>
+        </Router>
     )
 }

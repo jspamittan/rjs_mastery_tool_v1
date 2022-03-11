@@ -85,7 +85,7 @@ export const Core = () => {
 							<BizLogo size={60}/>
 						</Box>
 						<Box /* component={motion.div} */ animate={{ x: [-80, 0], opacity: [0, 1]}} transition={{ duration: 0.8, delay: 0.8 }} ml={1} zIndex={1}>
-							<Box color="primary.main" fontSize={24} >POF<strong>Yourtool</strong></Box>
+							<Box color="primary.main" fontSize={24} ><strong>MasteryTool</strong></Box>
 							<Box fontSize={12}>
 								Powered by: POFSIS
 							</Box>
