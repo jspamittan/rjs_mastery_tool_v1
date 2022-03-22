@@ -7,6 +7,7 @@ import { WebRoute } from "./core/webrouter/Route";
 import { SnakeLoader } from './core/loader/SnakeLoader'
 import { BizLogo } from './core/global/Icons';
 import { InstallPromotion } from './components/layouts/installation/InstallPromotion';
+import { Statistics } from './components/statistics/Index';
 // import { env } from './core/Env';
 // import { globalrqx } from './core/request/API';
 // import { motion } from 'framer-motion';
@@ -94,6 +95,7 @@ export const Core = () => {
 				)
 			}
 			<InstallPromotion install_state={install_state} />
+			
 		</Box>
 	)
 }

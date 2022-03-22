@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { Box, Container } from '@mui/material';
+import { Statistics } from '../statistics/Index';
+
 
 
 export const Home = () => {
@@ -12,10 +14,14 @@ export const Home = () => {
     return (
         <Container m-4>
             <Box display="flex" style={{fontFamily:'Copperplate Gothic', fontSize:'25px', color:'black', textAlign:'center', paddingTop:'5px', position: 'relative'}} >
-               <b >Dashboard / Home Feature</b> 
+               <b >Home / Dashboard </b> 
             </Box>
+            <hr color="black" size="3" width="130%"></hr>
+            <br></br>
+            <br></br>
             <Container>
-             <Box sx={{ bgcolor: '#116ca8', height: '50vh', width: '150vh', borderRadius: '25px'}} />
+            <Statistics  />
+             {/* <Box sx={{ bgcolor: '#116ca8', height: '50vh', width: '150vh', borderRadius: '25px'}} /> */}
             </Container>
         </Container>
     )

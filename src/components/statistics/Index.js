@@ -8,11 +8,12 @@ export const Statistics = () => {
     const { statistics_state } = useContext(ToolContext)
     console.log(statistics_state);
     const [oprops] = useState([
-        {name: 'affected', xs: 6, bgcolor: 'primary.main'},
-        {name: 'death', xs: 6, bgcolor: 'success.main'},
-        {name: 'active', xs: 4, bgcolor: 'error.dark'},
-        {name: 'serious', xs: 4, bgcolor: 'info.main'},
-        {name: 'recovered', xs: 4, bgcolor: 'warning.main'}
+        {name: 'templates', xs: 4, bgcolor: '#3d3d3d'},
+        {name: 'tEmplates', xs: 4, bgcolor: 'success.main'},
+        {name: 'contents', xs: 4, bgcolor: 'warning.main'},
+        {name: 'contents', xs: 4, bgcolor: 'info.main'},
+        {name: 'templates', xs: 4, bgcolor: 'warning.main'},
+        {name: 'contents', xs: 4, bgcolor: 'secondary.main'}
     ])
     
     return (
@@ -29,7 +30,7 @@ export const Statistics = () => {
                     })
                 }
             </Grid>
-            <Box bgcolor="gray" p={4} borderRadius={4} color="#fff" mt={4}>
+            <Box bgcolor="white" p={4} borderRadius={4} color="#black" mt={4} width={1300}>
                 <DailyGraph />
             </Box>
         </Container>
