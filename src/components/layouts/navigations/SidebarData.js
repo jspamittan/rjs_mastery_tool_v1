@@ -12,25 +12,25 @@ export const SidebarData = [
   },
   {
     title: 'Information',
-    path: '/',
+    path: '/information',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },
   {
     title: 'Poll',
-    path: '/',
+    path: '/poll',
     icon: <FaIcons.FaChartBar />,
     cName: 'nav-text'
   },
   {
     title: 'Questions',
-    path: '/',
+    path: '/questions',
     icon: <FaIcons.FaQuestionCircle />,
     cName: 'nav-text'
   },
   {
     title: 'Reports',
-    path: '/',
+    path: '/reports',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   }

@@ -4,7 +4,7 @@ import { makeStyles } from '@mui/styles';
 import { HomeRounded as IHome, ChevronRight as IChevronRight, ChevronLeft as IChevronLeft, Notifications as INotifications, AccountCircle as IAccountCircle } from '@mui/icons-material';
 import { Link, useLocation } from 'react-router-dom';
 
-const drawerWidth = 260;
+const drawerWidth = 250;
 
 
 const Left = () => {

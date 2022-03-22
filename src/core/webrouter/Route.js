@@ -10,7 +10,7 @@ export const WebRoute = () => {
             <SidebarLeft />
             <Switch>
                 {/* DASHBOARD ROUTES */}
-                <Route exact path="/" render={props=>(<Home {...props} />)} />
+                <Route exact path="/" render={props=>(<Home />)} />
 
                 {/* POLL ROUTES */}
                 {/* <Route exact path="/poll" render={props=>(<Poll {...props} />)} /> */}

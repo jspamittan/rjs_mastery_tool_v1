@@ -70,9 +70,9 @@ export const Core = () => {
 				tool_state.prefetch.data ? (
 					<Router>
 						<Suspense fallback={<SnakeLoader bg="black" />} >
-							<Navigation side={0} />
+							{/* <Navigation side={0} /> */}
 							<Box display="flex">
-								<Navigation side={1} />
+								{/* <Navigation side={1} /> */}
 								<Box mt={16} flexGrow={1}>
 									<WebRoute />
 								</Box>
