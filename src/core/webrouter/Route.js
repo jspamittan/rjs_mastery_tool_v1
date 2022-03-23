@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from '../../components/home/Index';
 import { Statistics } from '../../components/statistics/Index';
+import { Poll } from '../../components/poll/Index'
 import { Box, Container, Grid } from '@mui/material';
-import SidebarLeft from '../../components/layouts/navigations/SidebarLeft';
 import ClippedDrawer from '../../components/layouts/navigations/drawer/Index';
 
 export const WebRoute = () => {
@@ -20,7 +20,7 @@ export const WebRoute = () => {
                         <Route exact path="/" render={props=>(<Home />)} />
 
                         {/* POLL ROUTES */}
-                        {/* <Route exact path="/poll" render={props=>(<Poll {...props} />)} /> */}
+                        <Route exact path="/poll" render={props=>(<Poll {...props} />)} />
                         
                         {/* STATISTICS ROUTES */}
                         <Route exact path="/statistics" render={props=>(<Statistics {...props} />)} />
