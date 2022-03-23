@@ -11,11 +11,12 @@ export const StatisticsState = () => {
     // })
 
     const [overview, setOverview] = useState([
-        {id: 1, name: 'afFected', value: 300},
-        {id: 34, name: 'dEath', value: 5},
-        {id: 123, name: 'Recovered', value: 1},
-        {id: 6, name: 'actIve', value: 200},
-        {id: 5324234, name: 'sErious', value: 20}
+        {id: 1, name: 'templates', value: 0},
+        {id: 34, name: 'tEmplates', value: 0},
+        {id: 123, name: 'templates', value: 0},
+        {id: 6, name: 'contents', value: 0},
+        {id: 5324234, name: 'contents', value: 0},
+        {id: 5324235, name: 'contents', value: 0}
     ])
 
     return {
