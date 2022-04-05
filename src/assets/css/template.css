@@ -1,0 +1,12 @@
+
+.page-header {
+  border: 3px dashed rgb(0, 0, 0);
+}
+.pointer:hover{
+    cursor:pointer;
+}
+.center {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}

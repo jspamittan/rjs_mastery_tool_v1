@@ -8,6 +8,8 @@ import { ToolProvider } from './core/context/ToolContext';
 // Assets
 import './assets/css/global.css';
 import './assets/css/scrollbar.css';
+import './assets/css/bootstrap.css';
+import './assets/css/template.css';
 //pbt
 // Layouts
 import { Core as AuthCore } from './Core';
