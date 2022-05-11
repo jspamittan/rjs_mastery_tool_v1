@@ -18,7 +18,7 @@ export const DrawerData = [
   },
   {
     title: 'Poll',
-    path: '/poll',
+    path: '/templates',
     icon: <FaIcons.FaChartBar />,
     cName: 'nav-text'
   },

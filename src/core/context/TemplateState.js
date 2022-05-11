@@ -1,6 +1,7 @@
 import { useState, createContext } from 'react';
 
 export const ContentContext = createContext();
+
 export const ContentProvider = (props) => {
      const [contents, setContents] = useState([{
                 id:100, 

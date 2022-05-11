@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from '../../components/home/Index';
 import { Statistics } from '../../components/statistics/Index';
-import { Poll } from '../../components/poll/Index'
-import { Templates } from '../../components/poll/Templates/Index.js'
-import { ContentProvider } from '../context/TemplateState';
-
+import { Templates, Contents } from '../../components/poll/Index'
+import Poll from '../../components/poll/templates/Index'
 import { Box, Container, Grid } from '@mui/material';
 import ClippedDrawer from '../../components/layouts/navigations/drawer/Index';
+import { PollProvider } from '../context/PollsContext';
 
 export const WebRoute = () => {
     return (
@@ -22,15 +21,15 @@ export const WebRoute = () => {
                         {/* DASHBOARD ROUTES */}
                         <Route exact path="/" render={props=>(<Home />)} />
 
+                        <PollProvider>
                         {/* POLL ROUTES */}{/**ADDED /poll/templates route */}
-                        <Route exact path="/poll" render={props=>(<Poll {...props} />)} />
-                        <ContentProvider>
-                            <Route exact path="/poll/templates" render={props=>(<Templates {...props} />)} />
-                        </ContentProvider>
+                        <Route exact path="/templates" render={props=>(<Templates {...props} />)} />
 
+                        <Route exact path="/templates/new" render={props=>(<Poll {...props} />)} />
+                        
                         {/* STATISTICS ROUTES */}
                         <Route exact path="/statistics" render={props=>(<Statistics {...props} />)} />
-
+                        </PollProvider>
                         {/* 404 NOT FOUND */}
                         <Route>
                             <Container>
@@ -39,6 +38,7 @@ export const WebRoute = () => {
                                 </Box>
                             </Container>
                         </Route>
+                        
                     </Switch>
                 </Grid>
             </Grid>
